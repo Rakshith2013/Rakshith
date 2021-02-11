@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Project xmi:id="_dIOi0WyLEeu4ObozwnV3Hg" label="TalendCloud_Project" description="Learning Talend Cloud" language="java" technicalLabel="TALENDCLOUD_PROJECT" author="_dIOi0myLEeu4ObozwnV3Hg" productVersion="Talend Cloud Data Management Platform-7.3.1.20200219_1130" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/Rakshith2013/Rakshith.git&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DQ" bigData="false">
+    <migrationTask xmi:id="_fJlWkGyLEeu4ObozwnV3Hg" id="org.talend.repository.model.migration.CheckProductVersionMigrationTask" breaks="7.1.0" version="7.1.1"/>
+  </TalendProperties:Project>
+  <TalendProperties:User xmi:id="_dIOi0myLEeu4ObozwnV3Hg" login="alekyamohan1994@trial04999.ap.talend.com" firstName="Alekya" lastName="Vemula" type="DQ"/>
+</xmi:XMI>
