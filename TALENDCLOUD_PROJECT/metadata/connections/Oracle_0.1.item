@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmi:version="2.0">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
   <TalendMetadata:DatabaseConnection AdditionalParams="" DatabaseType="Oracle with SID" DatasourceName="" DbmsId="oracle_id" DriverClass="oracle.jdbc.OracleDriver" FileFieldName="" NullChar="" Password="enc:system.encryption.key.v1:gk4ENPN7nojMPFyvIM4tmA6MmJAR+ZyWIT95rm8pypGk" Port="1521" ProductId="ORACLE" SID="orcl" SQLMode="false" ServerName="localhost" SqlSynthax="" StandardSQL="true" StringQuote="" URL="jdbc:oracle:thin:@localhost:1521:orcl" UiSchema="" Username="sys as sysdba" dataPackage="_LKTdUGyOEeu4ObozwnV3Hg _LLOqYGyOEeu4ObozwnV3Hg _LLOqYWyOEeu4ObozwnV3Hg _LLOqYmyOEeu4ObozwnV3Hg _LLOqY2yOEeu4ObozwnV3Hg _LLOqZGyOEeu4ObozwnV3Hg _LLOqZWyOEeu4ObozwnV3Hg _LLOqZmyOEeu4ObozwnV3Hg _LLOqZ2yOEeu4ObozwnV3Hg _LLOqaGyOEeu4ObozwnV3Hg _LLOqaWyOEeu4ObozwnV3Hg _LLOqamyOEeu4ObozwnV3Hg _LLOqa2yOEeu4ObozwnV3Hg _LLOqbGyOEeu4ObozwnV3Hg _LLOqbWyOEeu4ObozwnV3Hg _LLOqbmyOEeu4ObozwnV3Hg _LLOqb2yOEeu4ObozwnV3Hg _LLOqcGyOEeu4ObozwnV3Hg _LLOqcWyOEeu4ObozwnV3Hg _LLOqcmyOEeu4ObozwnV3Hg _LLOqc2yOEeu4ObozwnV3Hg _LLOqdGyOEeu4ObozwnV3Hg _LLOqdWyOEeu4ObozwnV3Hg _LLOqdmyOEeu4ObozwnV3Hg _LLOqd2yOEeu4ObozwnV3Hg _LLOqeGyOEeu4ObozwnV3Hg _LLOqeWyOEeu4ObozwnV3Hg _LLOqemyOEeu4ObozwnV3Hg _LLOqe2yOEeu4ObozwnV3Hg _LLOqfGyOEeu4ObozwnV3Hg _LLOqfWyOEeu4ObozwnV3Hg _LLOqfmyOEeu4ObozwnV3Hg _LLOqf2yOEeu4ObozwnV3Hg _LLOqgGyOEeu4ObozwnV3Hg _LLOqgWyOEeu4ObozwnV3Hg _LLOqgmyOEeu4ObozwnV3Hg" dbVersionString="ORACLE_18" id="_m8XEcGyNEeu4ObozwnV3Hg" label="Oracle" name="Oracle" xmi:id="_K09fcGyOEeu4ObozwnV3Hg">
     <taggedValue tag="Is Conn Need Reload" value="false" xmi:id="_K0-GgGyOEeu4ObozwnV3Hg"/>
     <taggedValue tag="package filter" value="" xmi:id="_K9meEGyOEeu4ObozwnV3Hg"/>
@@ -23,7 +23,203 @@
   <orgomg.cwm.resource.relational:Schema dataManager="_K09fcGyOEeu4ObozwnV3Hg" name="DIP" xmi:id="_LLOqZmyOEeu4ObozwnV3Hg"/>
   <orgomg.cwm.resource.relational:Schema dataManager="_K09fcGyOEeu4ObozwnV3Hg" name="EXFSYS" xmi:id="_LLOqZ2yOEeu4ObozwnV3Hg"/>
   <orgomg.cwm.resource.relational:Schema dataManager="_K09fcGyOEeu4ObozwnV3Hg" name="FLOWS_FILES" xmi:id="_LLOqaGyOEeu4ObozwnV3Hg"/>
-  <orgomg.cwm.resource.relational:Schema dataManager="_K09fcGyOEeu4ObozwnV3Hg" name="HR" xmi:id="_LLOqaWyOEeu4ObozwnV3Hg"/>
+  <orgomg.cwm.resource.relational:Schema dataManager="_K09fcGyOEeu4ObozwnV3Hg" name="HR" xmi:id="_LLOqaWyOEeu4ObozwnV3Hg">
+    <ownedElement comment="country table. Contains 25 rows. References with locations table." id="_QQTGwGyOEeu4ObozwnV3Hg" label="COUNTRIES" name="COUNTRIES" tableType="TABLE" xmi:id="_QQU78GyOEeu4ObozwnV3Hg" xsi:type="relational:TdTable">
+      <taggedValue tag="Comment" value="country table. Contains 25 rows. References with locations table." xmi:id="_QQVjAGyOEeu4ObozwnV3Hg"/>
+      <feature comment="Primary key of countries table." key="true" label="COUNTRY_ID" length="2" name="COUNTRY_ID" nullable="false" sourceType="CHAR" talendType="id_String" xmi:id="_QQVjAWyOEeu4ObozwnV3Hg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Primary key of countries table." xmi:id="_QQVjAmyOEeu4ObozwnV3Hg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_QQVjA2yOEeu4ObozwnV3Hg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="1" name="CHAR" numericPrecisionRadix="10" xmi:id="_QQVjBGyOEeu4ObozwnV3Hg"/>
+      </feature>
+      <feature comment="Country name" label="COUNTRY_NAME" length="40" name="COUNTRY_NAME" sourceType="VARCHAR2" talendType="id_String" xmi:id="_QQVjBWyOEeu4ObozwnV3Hg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Country name" xmi:id="_QQVjBmyOEeu4ObozwnV3Hg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_QQVjB2yOEeu4ObozwnV3Hg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_QQVjCGyOEeu4ObozwnV3Hg"/>
+      </feature>
+      <feature comment="Region ID for the country. Foreign key to region_id column in the departments table." label="REGION_ID" name="REGION_ID" precision="-127" sourceType="NUMBER" talendType="id_BigDecimal" xmi:id="_QQVjCWyOEeu4ObozwnV3Hg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Region ID for the country. Foreign key to region_id column in the departments table." xmi:id="_QQVjCmyOEeu4ObozwnV3Hg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_QQVjC2yOEeu4ObozwnV3Hg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="2" name="NUMBER" nullable="columnNullable" numericPrecision="-127" numericPrecisionRadix="10" xmi:id="_QQVjDGyOEeu4ObozwnV3Hg"/>
+      </feature>
+    </ownedElement>
+    <ownedElement comment="Table that stores job history of the employees. If an employee&#10;changes departments within the job or changes jobs within the department,&#10;new rows get inserted into this table with old job information of the&#10;employee. Contains a complex primary key: employee_id+start_date.&#10;Contains 25 rows. References with jobs, employees, and departments tables." id="_RPNmEGyOEeu4ObozwnV3Hg" label="JOB_HISTORY" name="JOB_HISTORY" tableType="TABLE" xmi:id="_RPONIGyOEeu4ObozwnV3Hg" xsi:type="relational:TdTable">
+      <taggedValue tag="Comment" value="Table that stores job history of the employees. If an employee&#10;changes departments within the job or changes jobs within the department,&#10;new rows get inserted into this table with old job information of the&#10;employee. Contains a complex primary key: employee_id+start_date.&#10;Contains 25 rows. References with jobs, employees, and departments tables." xmi:id="_RPONIWyOEeu4ObozwnV3Hg"/>
+      <feature comment="A not null column in the complex primary key employee_id+start_date.&#10;Foreign key to employee_id column of the employee table" key="true" label="EMPLOYEE_ID" length="6" name="EMPLOYEE_ID" nullable="false" sourceType="NUMBER" talendType="id_BigDecimal" xmi:id="_RPONImyOEeu4ObozwnV3Hg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="A not null column in the complex primary key employee_id+start_date.&#10;Foreign key to employee_id column of the employee table" xmi:id="_RPONI2yOEeu4ObozwnV3Hg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_RPONJGyOEeu4ObozwnV3Hg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="2" name="NUMBER" numericPrecisionRadix="10" xmi:id="_RPONJWyOEeu4ObozwnV3Hg"/>
+      </feature>
+      <feature comment="A not null column in the complex primary key employee_id+start_date.&#10;Must be less than the end_date of the job_history table. (enforced by&#10;constraint jhist_date_interval)" key="true" label="START_DATE" length="7" name="START_DATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_RPONJmyOEeu4ObozwnV3Hg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="A not null column in the complex primary key employee_id+start_date.&#10;Must be less than the end_date of the job_history table. (enforced by&#10;constraint jhist_date_interval)" xmi:id="_RPONJ2yOEeu4ObozwnV3Hg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_RPONKGyOEeu4ObozwnV3Hg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="93" name="DATE" numericPrecisionRadix="10" xmi:id="_RPONKWyOEeu4ObozwnV3Hg"/>
+      </feature>
+      <feature comment="Last day of the employee in this job role. A not null column. Must be&#10;greater than the start_date of the job_history table.&#10;(enforced by constraint jhist_date_interval)" label="END_DATE" length="7" name="END_DATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_RPONKmyOEeu4ObozwnV3Hg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Last day of the employee in this job role. A not null column. Must be&#10;greater than the start_date of the job_history table.&#10;(enforced by constraint jhist_date_interval)" xmi:id="_RPONK2yOEeu4ObozwnV3Hg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_RPONLGyOEeu4ObozwnV3Hg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="93" name="DATE" numericPrecisionRadix="10" xmi:id="_RPONLWyOEeu4ObozwnV3Hg"/>
+      </feature>
+      <feature comment="Job role in which the employee worked in the past; foreign key to&#10;job_id column in the jobs table. A not null column." label="JOB_ID" length="10" name="JOB_ID" nullable="false" sourceType="VARCHAR2" talendType="id_String" xmi:id="_RPONLmyOEeu4ObozwnV3Hg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Job role in which the employee worked in the past; foreign key to&#10;job_id column in the jobs table. A not null column." xmi:id="_RPONL2yOEeu4ObozwnV3Hg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_RPONMGyOEeu4ObozwnV3Hg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" numericPrecisionRadix="10" xmi:id="_RPONMWyOEeu4ObozwnV3Hg"/>
+      </feature>
+      <feature comment="Department id in which the employee worked in the past; foreign key to deparment_id column in the departments table" label="DEPARTMENT_ID" length="4" name="DEPARTMENT_ID" sourceType="NUMBER" talendType="id_BigDecimal" xmi:id="_RPONMmyOEeu4ObozwnV3Hg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Department id in which the employee worked in the past; foreign key to deparment_id column in the departments table" xmi:id="_RPONM2yOEeu4ObozwnV3Hg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_RPONNGyOEeu4ObozwnV3Hg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="2" name="NUMBER" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_RPONNWyOEeu4ObozwnV3Hg"/>
+      </feature>
+    </ownedElement>
+    <ownedElement comment="jobs table with job titles and salary ranges. Contains 19 rows.&#10;References with employees and job_history table." id="_RPnOsGyOEeu4ObozwnV3Hg" label="JOBS" name="JOBS" tableType="TABLE" xmi:id="_RPn1wGyOEeu4ObozwnV3Hg" xsi:type="relational:TdTable">
+      <taggedValue tag="Comment" value="jobs table with job titles and salary ranges. Contains 19 rows.&#10;References with employees and job_history table." xmi:id="_RPn1wWyOEeu4ObozwnV3Hg"/>
+      <feature comment="Primary key of jobs table." key="true" label="JOB_ID" length="10" name="JOB_ID" nullable="false" sourceType="VARCHAR2" talendType="id_String" xmi:id="_RPn1wmyOEeu4ObozwnV3Hg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Primary key of jobs table." xmi:id="_RPn1w2yOEeu4ObozwnV3Hg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_RPn1xGyOEeu4ObozwnV3Hg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" numericPrecisionRadix="10" xmi:id="_RPn1xWyOEeu4ObozwnV3Hg"/>
+      </feature>
+      <feature comment="A not null column that shows job title, e.g. AD_VP, FI_ACCOUNTANT" label="JOB_TITLE" length="35" name="JOB_TITLE" nullable="false" sourceType="VARCHAR2" talendType="id_String" xmi:id="_RPn1xmyOEeu4ObozwnV3Hg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="A not null column that shows job title, e.g. AD_VP, FI_ACCOUNTANT" xmi:id="_RPn1x2yOEeu4ObozwnV3Hg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_RPn1yGyOEeu4ObozwnV3Hg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" numericPrecisionRadix="10" xmi:id="_RPn1yWyOEeu4ObozwnV3Hg"/>
+      </feature>
+      <feature comment="Minimum salary for a job title." label="MIN_SALARY" length="6" name="MIN_SALARY" sourceType="NUMBER" talendType="id_BigDecimal" xmi:id="_RPn1ymyOEeu4ObozwnV3Hg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Minimum salary for a job title." xmi:id="_RPn1y2yOEeu4ObozwnV3Hg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_RPn1zGyOEeu4ObozwnV3Hg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="2" name="NUMBER" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_RPn1zWyOEeu4ObozwnV3Hg"/>
+      </feature>
+      <feature comment="Maximum salary for a job title" label="MAX_SALARY" length="6" name="MAX_SALARY" sourceType="NUMBER" talendType="id_BigDecimal" xmi:id="_RPn1zmyOEeu4ObozwnV3Hg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Maximum salary for a job title" xmi:id="_RPn1z2yOEeu4ObozwnV3Hg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_RPn10GyOEeu4ObozwnV3Hg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="2" name="NUMBER" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_RPn10WyOEeu4ObozwnV3Hg"/>
+      </feature>
+    </ownedElement>
+    <ownedElement comment="employees table. Contains 107 rows. References with departments,&#10;jobs, job_history tables. Contains a self reference." id="_RQbuEGyOEeu4ObozwnV3Hg" label="EMPLOYEES" name="EMPLOYEES" tableType="TABLE" xmi:id="_RQcVIGyOEeu4ObozwnV3Hg" xsi:type="relational:TdTable">
+      <taggedValue tag="Comment" value="employees table. Contains 107 rows. References with departments,&#10;jobs, job_history tables. Contains a self reference." xmi:id="_RQcVIWyOEeu4ObozwnV3Hg"/>
+      <feature comment="Primary key of employees table." key="true" label="EMPLOYEE_ID" length="6" name="EMPLOYEE_ID" nullable="false" sourceType="NUMBER" talendType="id_BigDecimal" xmi:id="_RQcVImyOEeu4ObozwnV3Hg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Primary key of employees table." xmi:id="_RQcVI2yOEeu4ObozwnV3Hg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_RQcVJGyOEeu4ObozwnV3Hg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="2" name="NUMBER" numericPrecisionRadix="10" xmi:id="_RQcVJWyOEeu4ObozwnV3Hg"/>
+      </feature>
+      <feature comment="First name of the employee. A not null column." label="FIRST_NAME" length="20" name="FIRST_NAME" sourceType="VARCHAR2" talendType="id_String" xmi:id="_RQcVJmyOEeu4ObozwnV3Hg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="First name of the employee. A not null column." xmi:id="_RQcVJ2yOEeu4ObozwnV3Hg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_RQcVKGyOEeu4ObozwnV3Hg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_RQcVKWyOEeu4ObozwnV3Hg"/>
+      </feature>
+      <feature comment="Last name of the employee. A not null column." label="LAST_NAME" length="25" name="LAST_NAME" nullable="false" sourceType="VARCHAR2" talendType="id_String" xmi:id="_RQcVKmyOEeu4ObozwnV3Hg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Last name of the employee. A not null column." xmi:id="_RQcVK2yOEeu4ObozwnV3Hg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_RQcVLGyOEeu4ObozwnV3Hg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" numericPrecisionRadix="10" xmi:id="_RQcVLWyOEeu4ObozwnV3Hg"/>
+      </feature>
+      <feature comment="Email id of the employee" label="EMAIL" length="25" name="EMAIL" nullable="false" sourceType="VARCHAR2" talendType="id_String" xmi:id="_RQcVLmyOEeu4ObozwnV3Hg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Email id of the employee" xmi:id="_RQcVL2yOEeu4ObozwnV3Hg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_RQcVMGyOEeu4ObozwnV3Hg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" numericPrecisionRadix="10" xmi:id="_RQcVMWyOEeu4ObozwnV3Hg"/>
+      </feature>
+      <feature comment="Phone number of the employee; includes country code and area code" label="PHONE_NUMBER" length="20" name="PHONE_NUMBER" sourceType="VARCHAR2" talendType="id_String" xmi:id="_RQcVMmyOEeu4ObozwnV3Hg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Phone number of the employee; includes country code and area code" xmi:id="_RQcVM2yOEeu4ObozwnV3Hg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_RQcVNGyOEeu4ObozwnV3Hg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_RQcVNWyOEeu4ObozwnV3Hg"/>
+      </feature>
+      <feature comment="Date when the employee started on this job. A not null column." label="HIRE_DATE" length="7" name="HIRE_DATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_RQcVNmyOEeu4ObozwnV3Hg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Date when the employee started on this job. A not null column." xmi:id="_RQcVN2yOEeu4ObozwnV3Hg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_RQcVOGyOEeu4ObozwnV3Hg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="93" name="DATE" numericPrecisionRadix="10" xmi:id="_RQcVOWyOEeu4ObozwnV3Hg"/>
+      </feature>
+      <feature comment="Current job of the employee; foreign key to job_id column of the&#10;jobs table. A not null column." label="JOB_ID" length="10" name="JOB_ID" nullable="false" sourceType="VARCHAR2" talendType="id_String" xmi:id="_RQcVOmyOEeu4ObozwnV3Hg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Current job of the employee; foreign key to job_id column of the&#10;jobs table. A not null column." xmi:id="_RQcVO2yOEeu4ObozwnV3Hg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_RQcVPGyOEeu4ObozwnV3Hg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" numericPrecisionRadix="10" xmi:id="_RQcVPWyOEeu4ObozwnV3Hg"/>
+      </feature>
+      <feature comment="Monthly salary of the employee. Must be greater&#10;than zero (enforced by constraint emp_salary_min)" label="SALARY" length="8" name="SALARY" precision="2" sourceType="NUMBER" talendType="id_BigDecimal" xmi:id="_RQcVPmyOEeu4ObozwnV3Hg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Monthly salary of the employee. Must be greater&#10;than zero (enforced by constraint emp_salary_min)" xmi:id="_RQcVP2yOEeu4ObozwnV3Hg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_RQcVQGyOEeu4ObozwnV3Hg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="2" name="NUMBER" nullable="columnNullable" numericPrecision="2" numericPrecisionRadix="10" xmi:id="_RQcVQWyOEeu4ObozwnV3Hg"/>
+      </feature>
+      <feature comment="Commission percentage of the employee; Only employees in sales&#10;department elgible for commission percentage" label="COMMISSION_PCT" length="2" name="COMMISSION_PCT" precision="2" sourceType="NUMBER" talendType="id_BigDecimal" xmi:id="_RQcVQmyOEeu4ObozwnV3Hg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Commission percentage of the employee; Only employees in sales&#10;department elgible for commission percentage" xmi:id="_RQcVQ2yOEeu4ObozwnV3Hg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_RQcVRGyOEeu4ObozwnV3Hg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="2" name="NUMBER" nullable="columnNullable" numericPrecision="2" numericPrecisionRadix="10" xmi:id="_RQcVRWyOEeu4ObozwnV3Hg"/>
+      </feature>
+      <feature comment="Manager id of the employee; has same domain as manager_id in&#10;departments table. Foreign key to employee_id column of employees table.&#10;(useful for reflexive joins and CONNECT BY query)" label="MANAGER_ID" length="6" name="MANAGER_ID" sourceType="NUMBER" talendType="id_BigDecimal" xmi:id="_RQcVRmyOEeu4ObozwnV3Hg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Manager id of the employee; has same domain as manager_id in&#10;departments table. Foreign key to employee_id column of employees table.&#10;(useful for reflexive joins and CONNECT BY query)" xmi:id="_RQcVR2yOEeu4ObozwnV3Hg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_RQcVSGyOEeu4ObozwnV3Hg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="2" name="NUMBER" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_RQcVSWyOEeu4ObozwnV3Hg"/>
+      </feature>
+      <feature comment="Department id where employee works; foreign key to department_id&#10;column of the departments table" label="DEPARTMENT_ID" length="4" name="DEPARTMENT_ID" sourceType="NUMBER" talendType="id_BigDecimal" xmi:id="_RQcVSmyOEeu4ObozwnV3Hg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Department id where employee works; foreign key to department_id&#10;column of the departments table" xmi:id="_RQcVS2yOEeu4ObozwnV3Hg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_RQcVTGyOEeu4ObozwnV3Hg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="2" name="NUMBER" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_RQcVTWyOEeu4ObozwnV3Hg"/>
+      </feature>
+    </ownedElement>
+    <ownedElement comment="Departments table that shows details of departments where employees&#10;work. Contains 27 rows; references with locations, employees, and job_history tables." id="_RQyTYGyOEeu4ObozwnV3Hg" label="DEPARTMENTS" name="DEPARTMENTS" tableType="TABLE" xmi:id="_RQyTYWyOEeu4ObozwnV3Hg" xsi:type="relational:TdTable">
+      <taggedValue tag="Comment" value="Departments table that shows details of departments where employees&#10;work. Contains 27 rows; references with locations, employees, and job_history tables." xmi:id="_RQyTYmyOEeu4ObozwnV3Hg"/>
+      <feature comment="Primary key column of departments table." key="true" label="DEPARTMENT_ID" length="4" name="DEPARTMENT_ID" nullable="false" sourceType="NUMBER" talendType="id_BigDecimal" xmi:id="_RQyTY2yOEeu4ObozwnV3Hg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Primary key column of departments table." xmi:id="_RQyTZGyOEeu4ObozwnV3Hg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_RQyTZWyOEeu4ObozwnV3Hg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="2" name="NUMBER" numericPrecisionRadix="10" xmi:id="_RQyTZmyOEeu4ObozwnV3Hg"/>
+      </feature>
+      <feature comment="A not null column that shows name of a department. Administration,&#10;Marketing, Purchasing, Human Resources, Shipping, IT, Executive, Public&#10;Relations, Sales, Finance, and Accounting. " label="DEPARTMENT_NAME" length="30" name="DEPARTMENT_NAME" nullable="false" sourceType="VARCHAR2" talendType="id_String" xmi:id="_RQyTZ2yOEeu4ObozwnV3Hg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="A not null column that shows name of a department. Administration,&#10;Marketing, Purchasing, Human Resources, Shipping, IT, Executive, Public&#10;Relations, Sales, Finance, and Accounting. " xmi:id="_RQyTaGyOEeu4ObozwnV3Hg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_RQyTaWyOEeu4ObozwnV3Hg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" numericPrecisionRadix="10" xmi:id="_RQyTamyOEeu4ObozwnV3Hg"/>
+      </feature>
+      <feature comment="Manager_id of a department. Foreign key to employee_id column of employees table. The manager_id column of the employee table references this column." label="MANAGER_ID" length="6" name="MANAGER_ID" sourceType="NUMBER" talendType="id_BigDecimal" xmi:id="_RQyTa2yOEeu4ObozwnV3Hg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Manager_id of a department. Foreign key to employee_id column of employees table. The manager_id column of the employee table references this column." xmi:id="_RQyTbGyOEeu4ObozwnV3Hg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_RQyTbWyOEeu4ObozwnV3Hg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="2" name="NUMBER" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_RQyTbmyOEeu4ObozwnV3Hg"/>
+      </feature>
+      <feature comment="Location id where a department is located. Foreign key to location_id column of locations table." label="LOCATION_ID" length="4" name="LOCATION_ID" sourceType="NUMBER" talendType="id_BigDecimal" xmi:id="_RQyTb2yOEeu4ObozwnV3Hg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Location id where a department is located. Foreign key to location_id column of locations table." xmi:id="_RQyTcGyOEeu4ObozwnV3Hg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_RQyTcWyOEeu4ObozwnV3Hg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="2" name="NUMBER" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_RQyTcmyOEeu4ObozwnV3Hg"/>
+      </feature>
+    </ownedElement>
+    <ownedElement comment="Locations table that contains specific address of a specific office,&#10;warehouse, and/or production site of a company. Does not store addresses /&#10;locations of customers. Contains 23 rows; references with the&#10;departments and countries tables. " id="_SrWM4GyOEeu4ObozwnV3Hg" label="LOCATIONS" name="LOCATIONS" tableType="TABLE" xmi:id="_SrWz8GyOEeu4ObozwnV3Hg" xsi:type="relational:TdTable">
+      <taggedValue tag="Comment" value="Locations table that contains specific address of a specific office,&#10;warehouse, and/or production site of a company. Does not store addresses /&#10;locations of customers. Contains 23 rows; references with the&#10;departments and countries tables. " xmi:id="_SrWz8WyOEeu4ObozwnV3Hg"/>
+      <feature comment="Primary key of locations table" key="true" label="LOCATION_ID" length="4" name="LOCATION_ID" nullable="false" sourceType="NUMBER" talendType="id_BigDecimal" xmi:id="_SrWz8myOEeu4ObozwnV3Hg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Primary key of locations table" xmi:id="_SrWz82yOEeu4ObozwnV3Hg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_SrWz9GyOEeu4ObozwnV3Hg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="2" name="NUMBER" numericPrecisionRadix="10" xmi:id="_SrWz9WyOEeu4ObozwnV3Hg"/>
+      </feature>
+      <feature comment="Street address of an office, warehouse, or production site of a company.&#10;Contains building number and street name" label="STREET_ADDRESS" length="40" name="STREET_ADDRESS" sourceType="VARCHAR2" talendType="id_String" xmi:id="_SrWz9myOEeu4ObozwnV3Hg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Street address of an office, warehouse, or production site of a company.&#10;Contains building number and street name" xmi:id="_SrWz92yOEeu4ObozwnV3Hg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_SrWz-GyOEeu4ObozwnV3Hg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_SrWz-WyOEeu4ObozwnV3Hg"/>
+      </feature>
+      <feature comment="Postal code of the location of an office, warehouse, or production site&#10;of a company. " label="POSTAL_CODE" length="12" name="POSTAL_CODE" sourceType="VARCHAR2" talendType="id_String" xmi:id="_SrWz-myOEeu4ObozwnV3Hg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Postal code of the location of an office, warehouse, or production site&#10;of a company. " xmi:id="_SrWz-2yOEeu4ObozwnV3Hg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_SrWz_GyOEeu4ObozwnV3Hg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_SrWz_WyOEeu4ObozwnV3Hg"/>
+      </feature>
+      <feature comment="A not null column that shows city where an office, warehouse, or&#10;production site of a company is located. " label="CITY" length="30" name="CITY" nullable="false" sourceType="VARCHAR2" talendType="id_String" xmi:id="_SrWz_myOEeu4ObozwnV3Hg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="A not null column that shows city where an office, warehouse, or&#10;production site of a company is located. " xmi:id="_SrWz_2yOEeu4ObozwnV3Hg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_SrW0AGyOEeu4ObozwnV3Hg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" numericPrecisionRadix="10" xmi:id="_SrW0AWyOEeu4ObozwnV3Hg"/>
+      </feature>
+      <feature comment="State or Province where an office, warehouse, or production site of a&#10;company is located." label="STATE_PROVINCE" length="25" name="STATE_PROVINCE" sourceType="VARCHAR2" talendType="id_String" xmi:id="_SrW0AmyOEeu4ObozwnV3Hg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="State or Province where an office, warehouse, or production site of a&#10;company is located." xmi:id="_SrW0A2yOEeu4ObozwnV3Hg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_SrW0BGyOEeu4ObozwnV3Hg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_SrW0BWyOEeu4ObozwnV3Hg"/>
+      </feature>
+      <feature comment="Country where an office, warehouse, or production site of a company is&#10;located. Foreign key to country_id column of the countries table." label="COUNTRY_ID" length="2" name="COUNTRY_ID" sourceType="CHAR" talendType="id_String" xmi:id="_SrW0BmyOEeu4ObozwnV3Hg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Country where an office, warehouse, or production site of a company is&#10;located. Foreign key to country_id column of the countries table." xmi:id="_SrW0B2yOEeu4ObozwnV3Hg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_SrW0CGyOEeu4ObozwnV3Hg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="1" name="CHAR" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_SrW0CWyOEeu4ObozwnV3Hg"/>
+      </feature>
+    </ownedElement>
+    <ownedElement id="_SriaIGyOEeu4ObozwnV3Hg" label="REGIONS" name="REGIONS" tableType="TABLE" xmi:id="_SriaIWyOEeu4ObozwnV3Hg" xsi:type="relational:TdTable">
+      <feature key="true" label="REGION_ID" name="REGION_ID" nullable="false" precision="-127" sourceType="NUMBER" talendType="id_BigDecimal" xmi:id="_SriaImyOEeu4ObozwnV3Hg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="" xmi:id="_SriaI2yOEeu4ObozwnV3Hg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_SriaJGyOEeu4ObozwnV3Hg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="2" name="NUMBER" numericPrecision="-127" numericPrecisionRadix="10" xmi:id="_SriaJWyOEeu4ObozwnV3Hg"/>
+      </feature>
+      <feature label="REGION_NAME" length="25" name="REGION_NAME" sourceType="VARCHAR2" talendType="id_String" xmi:id="_SriaJmyOEeu4ObozwnV3Hg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="" xmi:id="_SriaJ2yOEeu4ObozwnV3Hg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_SriaKGyOEeu4ObozwnV3Hg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_SriaKWyOEeu4ObozwnV3Hg"/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.relational:Schema>
   <orgomg.cwm.resource.relational:Schema dataManager="_K09fcGyOEeu4ObozwnV3Hg" name="IX" xmi:id="_LLOqamyOEeu4ObozwnV3Hg"/>
   <orgomg.cwm.resource.relational:Schema dataManager="_K09fcGyOEeu4ObozwnV3Hg" name="MDDATA" xmi:id="_LLOqa2yOEeu4ObozwnV3Hg"/>
   <orgomg.cwm.resource.relational:Schema dataManager="_K09fcGyOEeu4ObozwnV3Hg" name="MDSYS" xmi:id="_LLOqbGyOEeu4ObozwnV3Hg"/>
@@ -49,13 +245,13 @@
   <orgomg.cwm.resource.relational:Schema dataManager="_K09fcGyOEeu4ObozwnV3Hg" name="WMSYS" xmi:id="_LLOqgGyOEeu4ObozwnV3Hg"/>
   <orgomg.cwm.resource.relational:Schema dataManager="_K09fcGyOEeu4ObozwnV3Hg" name="XDB" xmi:id="_LLOqgWyOEeu4ObozwnV3Hg"/>
   <orgomg.cwm.resource.relational:Schema dataManager="_K09fcGyOEeu4ObozwnV3Hg" name="XS$NULL" xmi:id="_LLOqgmyOEeu4ObozwnV3Hg"/>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9390b1b3-13d6-4cc7-9205-8b0cf954ac27"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>W0jTST2pgrSgaxj8+nvDhpoItEMWRFZETUcu6zDUk/sCWGfgngrTc8AxR7mQdcqf+A5N3wjLNb9y&#13;
-8HWzklaaxg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_82bc765c-17d3-4417-a849-a72fb8051897"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ZLNn4AAsSEymCfJR54VBJ4HCzkKq18ePdnBUrU2trSEiQbgZ0ij62Xz4z+slEj9HNoKqNliykRdz&#13;
-an8FdkAjNw==</DigestValue></Reference></SignedInfo><SignatureValue>Mt4I1DZGhPqjsH1++Ve4WmUVKDibl3AIz+W8BhaoBS/7wnWdyQamPDg1D2FvgkrSlejf/G8DGKzO&#13;
-b2B89WkSp/RFBd8DrHWPH1+EnsS417QiGToplyZdG5jBykV9ENQU0NviDPWwofPJyxkQxN4+/5Z/&#13;
-AvepktM5G8zWRvTg5LjoBiocloe0vcFV4L8zXedEwxAkDEjcHTsQ2aCmhXqAyLbZvgE/C2LpmGlP&#13;
-jFwDJXO6VJUgVtnpJj7egyPy2SGnK3PadImrKo5iaRQS49DzgHdnXMxHk6Y7brHKi20Tf13e8UoG&#13;
-OvuVZiDhwwdAJM6F+lvfrBqsR4+EvUogvrNL6Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3e745db6-e42f-4bdc-814b-77fc3e91e115"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Xncy6BbSJxao0Iu2oOz3Vsw9VETUqct9Lwzcx5s6Xt/ohgNRPuOyQxiVAOOAJ66MKD1uu8z6v+kG&#13;
+3ni1pu4Hhw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d1beac86-09ee-4ba0-bce9-76943dfcca0a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>4GMANwIIhrmPp2bFYacSIEUc9b3FatSmvKeKEtYdOvQc7D5Lu3tUoJFEXuxvOpWtaNmDKYgKC7Kn&#13;
+C2JydctoWA==</DigestValue></Reference></SignedInfo><SignatureValue>QbHK3AakukUU/HcA2Q7hNpbwjrEGw3fNJXonlNehW0XgxhXAiXWfKXHsnAjyRg0fzsdN21BF3PUq&#13;
+GtinnCFYWvmKGpw12HheKlVM4YML9JboDOxPZLzWkgWUCmIcvjUhn8Hyi5Sl0KtoBNYzvxtkCk70&#13;
+7wk8UUfKTsthqwODmw8GZq6UmlshbCxmTJkU39EZUjHxelcpXp3LlDk921m1DTjv+Bu25qAy8nI5&#13;
+oiLJno+7aXS+s0y1BEEv6AZdjwNN0a48fP3sFBcH3Y5HEHqVtSkMmqLVXy7Pfg3jhUbtAOua6zyc&#13;
+Pi2yCxGKzVP+wdsfh4KBNeg9JwUQ5SaDlOOEHg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -77,4 +273,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_82bc765c-17d3-4417-a849-a72fb8051897" Target="#_9390b1b3-13d6-4cc7-9205-8b0cf954ac27"><Timestamp>2021-02-11 17:25:45</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d1beac86-09ee-4ba0-bce9-76943dfcca0a" Target="#_3e745db6-e42f-4bdc-814b-77fc3e91e115"><Timestamp>2021-02-11 17:27:52</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
