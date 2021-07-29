@@ -20,10 +20,6 @@
     "version" : "Latest",
     "type" : "context"
   }, {
-    "id" : "TALEND_CLOUD_20210724:_JaRRcPAUEeu3GYAkvm0E_A",
-    "version" : "Latest",
-    "type" : "job"
-  }, {
     "id" : "_Ebp_MPAQEeu3GYAkvm0E_A",
     "version" : "Latest",
     "type" : "property"
