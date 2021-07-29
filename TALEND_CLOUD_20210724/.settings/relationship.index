@@ -1,5 +1,20 @@
 [ {
   "baseItem" : {
+    "id" : "_qyd-gPAPEeu3GYAkvm0E_A",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_Ebp_MPAQEeu3GYAkvm0E_A",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_Ebp_MPAQEeu3GYAkvm0E_A - metadata",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_iQ2aAO1iEeuE08M2WA2OhQ",
     "version" : "0.1",
     "type" : "test_case"
